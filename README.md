@@ -318,3 +318,93 @@ Run migrations on deploy: prisma migrate deploy.
 
 Host API on Render/Fly/EC2; host frontend on Vercel/Netlify.
 Set client VITE_API to your public API URL and rebuild.
+
+
+
+Frontend (React) Enhancements
+
+User Dashboard
+
+Allow users to register/login.
+
+Show “My Quizzes”, “Scores”, “Quiz History”.
+
+Timer-based Quizzes
+
+Add countdown timers per quiz or per question.
+
+Auto-submit when the timer runs out.
+
+Leaderboard & Scoring
+
+Display top scores across all users.
+
+Filter by quiz or date range.
+
+Quiz Categories & Tags
+
+Example: General Knowledge, Tech, Sports, etc.
+
+Add filters on the public quiz list.
+
+Quiz Analytics (for Admins)
+
+Charts showing total attempts, average scores, etc.
+
+Use Recharts or Chart.js for visualization.
+
+UI/UX Enhancements
+
+Use Material UI or Tailwind for a more polished experience.
+
+Add transitions and animations (Framer Motion).
+
+Responsive design for mobile screens.
+
+Dark Mode
+
+Add light/dark theme toggle.
+
+Question Randomization
+
+Shuffle question order or answer options dynamically per attempt.
+
+⚙️ Backend (Node.js + Express)
+
+User Authentication System
+
+Add registration/login endpoints.
+
+Role-based access (Admin / User).
+
+Quiz Results Tracking
+
+Save user attempts, scores, and timestamps.
+
+Provide /api/results endpoint.
+
+Email or Notification System
+
+Send quiz completion results via email.
+
+Notify admin when a quiz is taken.
+
+Quiz Scheduling
+
+Allow admin to set a “start date” and “end date”.
+
+Auto-disable quiz after the deadline.
+
+Quiz Sharing
+
+Generate unique shareable links for each quiz.
+
+Advanced Validation
+
+Validate quiz payloads with zod or Joi schemas before saving.
+
+Logging & Error Tracking
+
+Add Winston/Morgan logging middleware.
+
+Integrate Sentry for production error tracking.
