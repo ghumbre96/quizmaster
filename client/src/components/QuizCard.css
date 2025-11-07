@@ -1,0 +1,14 @@
+.quiz-card {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 180px; /* adjust as needed */
+  position: relative;
+  padding: 16px;
+}
+
+.quiz-card .card-footer {
+  display: flex;
+  justify-content: flex-end;
+  align-items: flex-end;
+}
