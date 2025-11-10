@@ -1,7 +1,10 @@
-import { useState, useEffect } from "react";
-
 export default function useAuth() {
-  const [token, setToken] = useState(() => localStorage.getItem("token"));
-  useEffect(() => { token ? localStorage.setItem("token", token) : localStorage.removeItem("token"); }, [token]);
-  return { token, setToken };
+  const token = localStorage.getItem("token");
+  return {
+    token,
+    set(t) {
+      if (t) localStorage.setItem("token", t);
+      else localStorage.removeItem("token");
+    },
+  };
 }
