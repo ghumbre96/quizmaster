@@ -47,7 +47,7 @@ export default function AdminPanel() {
 
   return (
     <>
-      {/* 🔥 Top Section with Manage Quizzes button */}
+      {/*  Top Section with Manage Quizzes button */}
       <div className="row" style={{ justifyContent:"space-between", alignItems:"center", marginBottom:"1rem" }}>
         <h1 className="h1">Create New Quiz</h1>
         <Link to="/admin/quizzes" className="btn btn-secondary">
